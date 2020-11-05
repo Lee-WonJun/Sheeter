@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Sheeter": {
+      "commandName": "Project",
+      "workingDirectory": "G:\\Project\\Sheeter\\Sheeter"
+    }
+  }
+}

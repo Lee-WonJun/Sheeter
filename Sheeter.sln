@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sheeter", "Sheeter\Sheeter.csproj", "{B8BD8B50-7D9B-43F4-9583-DF1936223326}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SheeterCore", "SheeterCore\SheeterCore.fsproj", "{06864353-F259-4E54-B1D2-0C10AC3B7F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8BD8B50-7D9B-43F4-9583-DF1936223326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BD8B50-7D9B-43F4-9583-DF1936223326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BD8B50-7D9B-43F4-9583-DF1936223326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BD8B50-7D9B-43F4-9583-DF1936223326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06864353-F259-4E54-B1D2-0C10AC3B7F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06864353-F259-4E54-B1D2-0C10AC3B7F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06864353-F259-4E54-B1D2-0C10AC3B7F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06864353-F259-4E54-B1D2-0C10AC3B7F94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7842559A-A520-4B46-A39F-76CF432DEB4E}
+	EndGlobalSection
+EndGlobal
