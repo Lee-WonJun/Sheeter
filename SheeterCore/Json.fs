@@ -1,34 +1,47 @@
 ﻿namespace SheeterCore
 open FSharp.Data
+open System.Windows.Media.Imaging
+open System.IO
+open System
 
 module Json=
     type KeyBinding = JsonProvider<"""
     {
-        "process": "process",
-        "keybindings": [
-            {"action":"action", "keys":"keys"},
-            
-            {"action":"action", "keys":"keys"},
-            
-            {"action":"action", "keys":"keys"},
-    
-            {"action":"action", "keys":"keys"}
-        ]
+       "icon": "name",
+       "keybindings": [
+           {
+               "key": "key",
+               "command": "command"
+           },
+           {
+               "key": "key",
+               "command": "command"
+           },
+           {
+               "key": "key",
+               "command": "command"
+           }
+       ]
     }
     """>
-    
+
     type KeyMap = 
         {
-            Action: string;
-            Keys: string
+            Command: string;
+            Key: string
         }
+
+    type KeyMapFile = {Icon:string; KeyMaps: KeyMap[]}
     
     let loadKeyMapFile (path:string) =
-        let file =
-            try
-                KeyBinding.Load(path)
-            with
-                | _ -> KeyBinding.GetSample();
-
-        file.Keybindings
-        |> Array.map (fun x -> {Action = x.Action; Keys = x.Keys})
+        try
+            Some (KeyBinding.Load(path))
+        with
+            | _ -> None;
+        |> function
+            | Some file -> 
+                let keymap = 
+                    file.Keybindings
+                    |> Array.map (fun x -> {Command = x.Command; Key = x.Key})
+                {Icon = file.Icon; KeyMaps = keymap}
+            | None -> {Icon = ""; KeyMaps = Array.empty }
