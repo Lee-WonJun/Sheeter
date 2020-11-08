@@ -45,6 +45,7 @@ Inspired by Microsoft's PowerToys and Intelli J's "Search Everywhere."
  #### Close
  - Alt F4 on overlay
  - Exit button in Tray
+ 
  ![image](https://user-images.githubusercontent.com/10369528/98461848-f3bd3e00-21f2-11eb-8e83-99797182aef7.png)
 
 
