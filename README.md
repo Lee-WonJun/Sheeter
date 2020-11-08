@@ -1,5 +1,6 @@
 # Sheeter
 ![sheeter](https://user-images.githubusercontent.com/10369528/98460692-f6fffc00-21e9-11eb-9588-10a30836eeaf.png)
+
 Cheat sheet viewer of the current application
 
 ## What is Sheeter?
